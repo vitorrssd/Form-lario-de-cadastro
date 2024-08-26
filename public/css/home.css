@@ -1,0 +1,11 @@
+.box {
+    visibility: hidden;
+}
+.home{
+    text-align: center;
+}
+.home h1{
+        position: relative;
+        font-size: 50px;
+        font-weight: 700;
+}

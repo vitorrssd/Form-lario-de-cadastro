@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    font-family: "Quicksand", sans-serif;
+    color: rgba(255, 255, 255, 0.945);
+    font-weight: 400;
+}
+body{
+    overflow-x: hidden;
+    background: #b60f2b;
+    letter-spacing: 2px;
+    height: 170vh;
+}
+.header-background{
+    position: absolute;
+    bottom: 10px;
+    right: 79rem;
+    z-index: -1;
+    width: 1918px;
+    height: 1024px;
+}
+.header-background::before,
+.img-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 79rem;
+    width: 102%;
+    height: 170%;
+    background-color: #0000009a; /* Cor do overlay */
+    z-index: 1; /*overlay acima da imagem */
+}
+.box{
+    border: solid 2px rgb(2, 2, 2);
+    height: 80px;
+    width: 150px;
+    left: 10px;
+    position: relative;
+}   
+.container nav{
+    display: flex;
+}
+.container .different{
+    flex: 2;
+    background:#0000009a;
+}
+.list{
+    justify-content: right;
+}
+.list li{
+    position: relative;
+    right: 200px;
+    padding-top: 10px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+.log{
+    top: -25px;
+    position: relative;
+    font-size: 30px;
+    font-weight: bolder;
+    left: 24px;
+
+}
+ul{
+    display: flex;
+    column-gap: 40px;
+}
+.sing-up,
+.login,
+.see-more,
+.buy,
+.submit-btn{
+    position: relative;
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 24px;
+    font-weight: bold;
+    bottom: 1px;
+    background: #0000006b;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 40px;
+    width: 170px;
+    transition: .2s;
+    z-index: 2;
+}
+.sing-up a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.see-more,
+.buy{
+    z-index: 3;
+    font-weight: 150;
+    width: 100px;
+    font-weight: 600;
+}
+.see-more{
+    width: 130px;
+    background-color: rgba(250, 235, 215, 0.76);
+}
+.buy{
+    width: 120px;
+    position: relative;
+    background:#b60f2b77;
+    padding-bottom: 10px;
+}
+.see-more h2{
+    position: relative;
+    font-size: 20px;
+    bottom: 13px;
+    font-weight: 800;
+    color: #252122;
+}
+.buy:hover,
+.submit-btn:hover{
+    outline: 3px solid #b60f2b77; 
+    outline-offset: 2px; 
+}
+.see-more:hover{
+    outline: 3px solid rgba(250, 235, 215, 0.76);
+    outline-offset: 2px;
+}
+.sing-up:hover,
+.login:hover,
+.fa-angle-right:hover,
+.fa-chevron-left:hover {
+    background:#b60f2bb4;
+}
+.sing-up{
+    height: 50px;
+    width: 200px;
+}             
+.about-us{
+    position: relative;
+    left: 12.40rem;
+    bottom: 120px;
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.699);
+}
+.about-us h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+.info-text{
+    position: relative;
+    font-size: 30px;
+}
+.information{
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+.slider-container{
+    position: relative;
+    top: 250px;
+    justify-content: left;
+    left: 10px;
+    display: flex;
+    column-gap: 60px;
+    width: 205%;
+    transition: 4s;
+}
+.box a{
+    text-decoration: none;
+}
+.slide,
+.slider{
+    position:relative;
+    height: 650px;
+    width: 350px;
+    bottom: 2rem;
+    border-radius: 20px;
+    background-color: #0000009a;
+    transition: .2s;
+}  
+.slide:hover,
+.slider:hover {
+    background-color: #531f1fd3;
+    border: 1px solid #fff;
+}
+.navigation-manual{
+    position: absolute;
+    width: 700px;
+    margin-top: -40px;
+    display:flex;
+    justify-content: center;
+    visibility: hidden;
+}
+.manual-btn{
+    top: 8rem;
+    border: 1px solid rgb(240, 232, 232);
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+}
+.manual-btn:hover{
+    background-color: rgb(255, 88, 88);
+    transition: .4s;
+}
+.manual-btn:not(:last-child){
+     margin-right: 40px;
+}
+
+#radio1:checked ~ .s1{
+    margin-left: 0;
+}  
+#radio2:checked ~ .s1{
+    margin-left: -30%;
+}  
+#radio3:checked ~ .s1{
+    margin-left: -105%;
+}
+
+.banner{
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    width: 310px;
+    border-radius: 20px;
+}
+.info-text-banner{
+    z-index: 4;
+    position: relative;
+    color: white;
+    top: 368px;
+    left: 10px;
+    font-size: 24px;
+}
+.description{
+    font-size: 13px;
+    font-weight: 550;
+    width: 90%;
+}
+.fa-angle-right,
+.fa-chevron-left{
+    position: absolute;
+    color: aliceblue;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 16px;
+    width: 30px;
+    height: 40px;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: #0000009a;
+    visibility: visible;
+}
+.fa-chevron-left{
+    top: 10rem;
+    right: 13rem;
+}
+.fa-angle-right{
+    top: 10rem;
+    left: 90rem;
+}
+.slides input{
+    visibility: hidden;
+}
+.name{
+    font-size: 30px;
+}
+.button-position{
+    display: flex;
+    gap: 10px;
+}
+.game-banner{
+    position: relative;
+    border-radius: 20px;
+    left: 45px;
+    top: 100px;
+    width: 330px;
+    transition: .2s;
+    box-shadow: 10px 5px 5px rgba(26, 15, 15, 0.493);
+    transition: transform 0.1s ease; 
+}
+.game-banner:hover{
+    box-shadow: 3px 3px #1312129a, -1em 0 .9em #0000009a;
+    transform: scale(1.1) translateY(-10px); 
+}
+.games{
+    display: flex;
+    gap: 40px;
+}
+@media (max-width: 480px) {
+    .box{
+        width: 70%;
+    }
+    .login{
+        top:688px;
+        height: 50px;
+        width: 200px;
+        right: 10%;
+    }
+    .sing-up{
+        left: 26%;
+    }
+    .game-banner{
+        width: 210px;
+        left: 1%;
+    }
+    .slider-container{
+        display: block;
+        left: 0%;
+    }
+    .banner{
+        left: 7%;
+        width: 400px;
+    }
+    .header-background{
+        top: 0px;
+        right: 130%;
+    }
+    .header-background::before,
+    .img-box::before{
+     height: 850%;
+     }
+    .fa-chevron-left{
+        display: none;
+    }
+    .slide{
+        width: 49%;
+        height: 735px;
+    }
+    .slider{
+        width: 49%;
+    }
+    .info-text-banner{
+        top: 70%;
+    }
+    .box{
+        left: 0px;
+    }
+}    
+@media (max-width: 390px) {
+    .login{
+        top: 802px;
+        left: 17%;
+        width: 170px;
+    }
+    .sing-up{
+        width: 170px;
+    }
+    .banner{
+        left: 3.50%;
+        width: 350px;
+    }
+    .info-text-banner{
+        top: 67.20%;
+    }
+    .header-background::before,
+    .img-box::before{
+     height: 858%;
+     }
+     .game-banner{
+        width: 170px;
+        left: -1%;
+     }
+     .log{
+        left: 6%;
+     }
+     .about-us h3{
+        position: relative;
+        bottom: 20px;
+        right: 40%;
+     }
+}
